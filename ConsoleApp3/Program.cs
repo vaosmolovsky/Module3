@@ -18,10 +18,14 @@
             Console.WriteLine("У меня {0} размер ноги",mySize);
             Console.WriteLine();
             Console.WriteLine("{0}\n\t {1}\n\t{2}", name,age,favcolor);
-            String str = Console.ReadLine();
+            string? str = Console.ReadLine();
             Console.WriteLine(""+str);
-
+            int counter = 10;
+            Console.WriteLine("Value: {0} Increment: {1}", counter, --counter);
+            double result = 10 % 3;
+            Console.WriteLine("Value: {0}", result);
             Console.ReadKey();
+            
         }
     }
 }
