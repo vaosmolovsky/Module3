@@ -18,7 +18,10 @@
             Console.WriteLine("У меня {0} размер ноги",mySize);
             Console.WriteLine();
             Console.WriteLine("{0}\n\t {1}\n\t{2}", name,age,favcolor);
-            Console.ReadKey(1);
+            String str = Console.ReadLine();
+            Console.WriteLine(""+str);
+
+            Console.ReadKey();
         }
     }
 }
