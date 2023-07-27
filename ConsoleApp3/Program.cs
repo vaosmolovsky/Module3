@@ -4,16 +4,21 @@
     {
         static void Main(string[] args)
         {
-            string myName = "Влад";
-            byte myAge = 29;
+            string name = "Влад";
+            byte age = 29;
             bool myPet = true;
-            double mySize = 44.5; 
-             
-            Console.WriteLine("Меня зовут " + myName);
-            Console.WriteLine("Мне {0} лет",myAge);
+            double mySize = 44.5;
+            string favcolor = "black";
+
+            Console.WriteLine("\tПривет, \n мир!");
+            Console.WriteLine();
+            Console.WriteLine("Меня зовут " + name);
+            Console.WriteLine($"Мой возраст {age}");
             Console.WriteLine("Если ли у вас питомец? " +myPet);
             Console.WriteLine("У меня {0} размер ноги",mySize);
-            Console.ReadKey();
+            Console.WriteLine();
+            Console.WriteLine("{0}\n\t {1}\n\t{2}", name,age,favcolor);
+            Console.ReadKey(1);
         }
     }
 }
