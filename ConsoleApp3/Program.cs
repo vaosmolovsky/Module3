@@ -4,28 +4,16 @@
     {
         static void Main(string[] args)
         {
-            string name = "Влад";
-            byte age = 29;
-            bool myPet = true;
-            double mySize = 44.5;
-            string favcolor = "black";
-
-            Console.WriteLine("\tПривет, \n мир!");
-            Console.WriteLine();
-            Console.WriteLine("Меня зовут " + name);
-            Console.WriteLine($"Мой возраст {age}");
-            Console.WriteLine("Если ли у вас питомец? " +myPet);
-            Console.WriteLine("У меня {0} размер ноги",mySize);
-            Console.WriteLine();
-            Console.WriteLine("{0}\n\t {1}\n\t{2}", name,age,favcolor);
-            string? str = Console.ReadLine();
-            Console.WriteLine(""+str);
-            int counter = 10;
-            Console.WriteLine("Value: {0} Increment: {1}", counter, --counter);
-            double result = 10 % 3;
-            Console.WriteLine("Value: {0}", result);
+            Console.Write("Введите ваше имя: ");
+            var name = (Console.ReadLine());
+            Console.Write("Введите ваш возраст: ");
+            var age = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Вас зовут {0} и вас {1} лет ", name, age);
+            Console.Write("Введите дату рождения: ");
+            var birthdate = Console.ReadLine();
+            Console.Write("Ваша дата рождения {0}", birthdate);
             Console.ReadKey();
-            
+
         }
     }
 }
